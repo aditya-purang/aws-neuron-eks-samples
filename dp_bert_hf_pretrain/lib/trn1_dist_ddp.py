@@ -44,6 +44,7 @@ def generateAppDef(script_args: str, nnodes: int, nproc_per_node: int,
     ]
 
     env_mapping = {
+            "BUCKET_CAP_MB": "512",
             "CCOM_SOCKET_IFNAME": "eth0",
             "FI_EFA_USE_DEVICE_RDMA": "1",
             "FI_PROVIDER": "efa",
